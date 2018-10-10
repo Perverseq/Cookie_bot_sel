@@ -1,7 +1,7 @@
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 
-driver = webdriver.Chrome("C:\\Users\\User\\Desktop\\Cookie_bot_sel\\chromedriver.exe")
+driver = webdriver.Chrome(".\\chromedriver.exe")
 driver.get("http://orteil.dashnet.org/cookieclicker/")
 
 
