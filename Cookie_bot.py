@@ -13,10 +13,7 @@ def click():
 def buy_upgrades():
     try:
         upgrade = driver.find_element_by_xpath("//*[@class='crate upgrade enabled' and contains (@id, 'upgrade0')]")
-        if upgrade.is_enabled():
-            upgrade.click()
-        else:
-            pass
+        upgrade.click()
     except NoSuchElementException:
         pass
 
@@ -24,11 +21,7 @@ def buy_upgrades():
 def buy_cursors():
     try:
         cursor = driver.find_element_by_xpath('//*[@class="product unlocked enabled" and contains (@id, "product0")]')
-        if cursor.is_enabled():
-            cursor.click()
-            pass
-        else:
-            pass
+        cursor.click()
     except NoSuchElementException:
         pass
 
@@ -36,11 +29,7 @@ def buy_cursors():
 def buy_grandmas():
     try:
         grandma = driver.find_element_by_xpath('//*[@class="product unlocked enabled" and contains (@id, "product1")]')
-        if grandma.is_enabled():
-            grandma.click()
-            pass
-        else:
-            pass
+        grandma.click()
     except NoSuchElementException:
         pass
 
@@ -56,5 +45,3 @@ def main():
 
 if __name__ == "__main__":
         main()
-
-
